@@ -28,3 +28,27 @@ button.profile:active {
     transform: scale(1.05);
     box-shadow: 1px 1px 2px black;
 }
+
+@media (max-width: 1010px) {
+    .profile {
+        top: 80px;
+    }
+}
+
+@media (max-width: 798px) {
+    .profile {
+        top: 95px;
+    }
+}
+
+@media (max-width: 527px) {
+    .profile {
+        top: 175px;
+    }
+}
+
+@media (max-width: 333px) {
+    .profile {
+        top: 200px;
+    }
+}

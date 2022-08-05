@@ -4,7 +4,7 @@ import TopSection from "./TopSection"
 import Footer from "./Footer";
 
 export default function Layout(props) {
-    const projectDescription = "I'm Pretending to Make a Potato Salad with Fake Money $$$";
+    const projectDescription = "I'm Pretending to Make a Potato Salad with Fake Money$$$";
     
     return (
         <>
