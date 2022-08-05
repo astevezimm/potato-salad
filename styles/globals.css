@@ -3,7 +3,7 @@ body {
 }
 
 main {
-    animation: content-appear 1s ease-out forwards;
+    animation: content-appear 1s ease-out;
     min-height: calc(100vh - 261px);
 }
 @keyframes content-appear {
