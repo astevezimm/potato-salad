@@ -1,15 +1,3 @@
-.title {
-    padding-top: 30px;
-    padding-bottom: 45px;
-    margin: 0;
-    text-align: center;
-    font-family: 'Mouse Memoirs', sans-serif;
-    font-size: 3rem;
-    background-image: linear-gradient(rgba(255,183,43,1) 0%, rgba(255,230,27,1) 70%, rgba(255,230,27,0) 100%);
-    color: #B5FE83;
-    text-shadow: 1px 1px 2px black;
-}
-
 body {
     background-image: linear-gradient(to right, #d0d0d0, #F7F7F7);
 }
@@ -29,31 +17,8 @@ main {
     }
 }
 
-footer {
-    padding-top: 50px;
-    text-align: center;
-    bottom: 0;
-    width: 100%;
-    z-index: 1;
-    background-image: linear-gradient(to top, #B5FE83 0%, rgba(255,230,27,1) 70%, rgba(255,230,27,0) 100%);
-}
-
-footer h4 {
-    font-size: 16px;
-    margin-bottom: 4px;
-}
-
-footer p {
-    font-size: 15px;
-    color: #858585;
-    padding-bottom: 10px;
-    margin-bottom: 0;
-}
-
-footer a {
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
+.heading {
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 3rem;
+    text-shadow: 1px 1px 2px black;
 }
