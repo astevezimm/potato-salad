@@ -6,7 +6,7 @@
 
 img.profile {
     border-radius: 50px;
-    height: 65px;
+    height: 50px;
 }
 
 button.profile {
@@ -31,7 +31,7 @@ button.profile:active {
 
 @media (max-width: 1010px) {
     .profile {
-        top: 80px;
+        top: 85px;
     }
 }
 
@@ -41,7 +41,7 @@ button.profile:active {
     }
 }
 
-@media (max-width: 527px) {
+@media (max-width: 560px) {
     .profile {
         top: 175px;
     }
