@@ -45,6 +45,7 @@
     display: block;
     font-size: 300%;
     line-height: 80px;
+    font-weight: 300;
 }
 
 .days-left-label {
