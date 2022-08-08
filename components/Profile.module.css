@@ -29,32 +29,14 @@ button.profile:active {
     box-shadow: 1px 1px 2px black;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 575px) {
     .profile {
-        top: 85px;
+        right: 10px;
     }
 }
 
-@media (max-width: 876px) {
+@media (max-width: 375px) {
     .profile {
-        top: 95px;
-    }
-}
-
-@media (max-width: 487px) {
-    .profile {
-        top: 140px;
-    }
-}
-
-@media (max-width: 373px) {
-    .profile {
-        top: 200px;
-    }
-}
-
-@media (max-width: 373px) {
-    .profile {
-        top: 200px;
+        top: 175px;
     }
 }
