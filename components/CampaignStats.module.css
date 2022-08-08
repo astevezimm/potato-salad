@@ -1,0 +1,12 @@
+.stats {
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.stat {
+    width: 175px;
+    text-align: center;
+    flex-grow: 1;
+    margin: auto;
+}
