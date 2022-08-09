@@ -4,11 +4,24 @@ const profileSlice = createSlice({
     name: "profile",
     initialState: {
         loggedIn: false,
-        image: "/images/profile-placeholder.png"
+        image: "/images/profile-placeholder.png",
+        firstName: ""
     },
     reducers: {
-        login: state => { state.loggedIn = true; },
-        logout: state => { state.loggedIn = false; }
+        /* will eventually be called through an Action Creator */
+        login: (state/*, action*/) => {
+            state.loggedIn = true;
+            //state.image = action.payload.image;
+            //state.firstName = action.payload.firstName;
+        },
+        
+        logout: state => { state.loggedIn = false; },
+        changeProfilePic: (state, action) => {
+            state.image = action.payload;
+        },
+        changeFirstName: (state, action) => {
+            state.firstName = action.payload;
+        }
     }
 });
 
