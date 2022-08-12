@@ -37,6 +37,6 @@ button.profile:active {
 
 @media (max-width: 375px) {
     .profile {
-        top: 175px;
+        top: 150px;
     }
 }
