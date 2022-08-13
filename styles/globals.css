@@ -2,9 +2,15 @@ body {
     background-image: linear-gradient(to right, #d0d0d0, #F7F7F7);
 }
 
+#__next {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
 main {
     animation: content-appear 1s ease-out;
-    min-height: calc(100vh - 261px);
+    flex-grow: 1;
 }
 @keyframes content-appear {
     from {
