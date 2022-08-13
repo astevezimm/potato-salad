@@ -3,7 +3,7 @@ import {createSlice} from "@reduxjs/toolkit";
 const campaignStatsSlice = createSlice({
     name: "campaignStats",
     initialState: {
-        timeEnds: new Date(),
+        timeEnds: new Date(2023, 8, 24),
         goal: 1000000,
         totalAmount: 0,
         dailyAmounts: [],
