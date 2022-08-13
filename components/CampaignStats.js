@@ -43,7 +43,9 @@ export default function CampaignStats() {
                     </h2>
                 </div>
             </div>
-            <div className={classes["percent-bar"]} />
+            <div className={classes["percent-bar"]}>
+                <div className={classes["percent-fill"]} style={{width: goalPercent() + "%"}} />
+            </div>
         </div>
     );
 }
