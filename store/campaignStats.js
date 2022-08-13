@@ -5,7 +5,7 @@ const campaignStatsSlice = createSlice({
     initialState: {
         timeEnds: new Date(2023, 8, 24),
         goal: 1000000,
-        totalAmount: 250000,
+        totalAmount: 2500000,
         dailyAmounts: [],
         backers: 2,
         dailyBackers: []

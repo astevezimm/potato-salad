@@ -67,6 +67,7 @@
     height: 20px;
     background-color: #d0d0d0;
     margin-top: auto;
+    overflow: hidden;
 }
 
 .percent-fill {
