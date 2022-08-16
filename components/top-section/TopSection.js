@@ -1,5 +1,5 @@
 import classes from "./TopSection.module.css"
-import CampaignStats from "../CampaignStats";
+import CampaignStats from "./CampaignStats";
 
 export default function TopSection(props) {
     return (

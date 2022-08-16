@@ -1,6 +1,6 @@
 import {useDispatch, useSelector} from "react-redux";
-import {profileActions} from "../store/profile";
-import classes from "./Profile.module.css"
+import {profileActions} from "../../store/profile";
+import classes from "./Profile.module.css";
 
 export default function Profile() {
     const profile = useSelector(state => state.profile);

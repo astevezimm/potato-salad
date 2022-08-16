@@ -1,7 +1,7 @@
 import MetaData from "./MetaData"
-import Header from "./Header";
-import TopSection from "./TopSection"
-import Footer from "./Footer";
+import Header from "./header/Header";
+import TopSection from "./top-section/TopSection"
+import Footer from "./footer/Footer";
 
 export default function Layout(props) {
     const projectDescription = "I'm Pretending to Make a Potato Salad with Fake Money$$$";

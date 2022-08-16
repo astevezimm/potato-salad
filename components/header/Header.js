@@ -1,5 +1,5 @@
 import classes from "./Header.module.css"
-import Profile from "../Profile";
+import Profile from "./Profile";
 
 export default function Header(props) {
     return (
