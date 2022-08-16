@@ -8,5 +8,5 @@ export default function Profile() {
     
     return profile.loggedIn ?
         <img className={classes.profile} src={profile.image} alt="profile" /> :
-        <button className={classes.profile} onClick={() => dispatch(profileActions.login())}>Log In</button>;
+        <button className={"button " + classes.profile} onClick={() => dispatch(profileActions.login())}>Log In</button>;
 }

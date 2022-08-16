@@ -28,9 +28,27 @@ main {
     font-size: 3rem;
     text-shadow: 1px 1px 2px black;
 }
-
 @media (max-width: 767px) {
     .heading {
         font-size: 2.5rem;
     }
+}
+
+.button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #B5FE83;
+    box-shadow: 1px 1px 2px #6e6e6e;
+    transition: all 0.1s;
+}
+@media (hover: hover) {
+    .button:hover {
+        transform: scale(1.05) translate(0, -5px);
+        box-shadow: 1px 3px 4px #6e6e6e;
+    }    
+}
+.button:active {
+    transform: scale(1.05);
+    box-shadow: 1px 1px 2px black;
 }
