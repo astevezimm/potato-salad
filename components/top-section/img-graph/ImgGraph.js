@@ -1,4 +1,4 @@
-import classes from "./TopSection.module.css";
+import classes from "./ImgGraph.module.css";
 import {useState} from "react";
 
 export default function ImgGraph(props) {
