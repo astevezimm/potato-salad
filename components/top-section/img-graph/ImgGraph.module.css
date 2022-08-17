@@ -9,10 +9,6 @@
 }
 
 @media (hover: hover) {
-    .img-graph:hover img {
-        transform: rotateY(180deg);
-        filter: blur(10px);
-    }
     .img-graph button {
         display: none;
     }

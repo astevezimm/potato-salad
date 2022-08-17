@@ -1,6 +1,6 @@
 import classes from "./TopSection.module.css"
 import CampaignStats from "./CampaignStats";
-import ImgGraph from "./ImgGraph";
+import ImgGraph from "./img-graph/ImgGraph";
 
 export default function TopSection(props) {
     return (
