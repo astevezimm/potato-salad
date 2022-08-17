@@ -75,25 +75,25 @@
     background-color: #B5FE83;
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
     .stat:last-child {
         margin-top: 25px;
     }
 }
 
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
     .stats {
         margin-top: auto;
     }
 }
 
-@media (max-width: 991px) {
+@media only screen and (max-width: 991px) {
     .stats-area > * {
         margin-top: 20px;
     }
 }
 
-@media (max-width: 373px) {
+@media only screen and (max-width: 373px) {
     .stat:first-child {
         order: 1;
         margin-top: 10px;

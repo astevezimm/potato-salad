@@ -8,7 +8,7 @@
     transition: transform .5s ease, filter .3s .2s;
 }
 
-@media (hover: hover) {
+@media only screen and (hover: hover) {
     .img-graph button {
         display: none;
     }
@@ -19,7 +19,7 @@
     filter: blur(10px);
 }
 
-@media (hover: none) {
+@media only screen and (hover: none) {
     .img-graph {
         position: relative;
     }
