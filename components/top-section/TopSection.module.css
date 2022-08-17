@@ -3,6 +3,10 @@
     margin-bottom: 50px;
 }
 
+.img-graph {
+    perspective: 1500px;
+}
+
 .img-graph img {
     width: 100%;
     border-radius: 30px;
