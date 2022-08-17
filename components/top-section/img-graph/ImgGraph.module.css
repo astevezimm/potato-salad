@@ -1,5 +1,6 @@
 .img-graph {
     perspective: 1500px;
+    position: relative;
 }
 
 .img-graph img {
