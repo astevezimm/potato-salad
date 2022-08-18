@@ -4,6 +4,8 @@ import {Provider} from "react-redux";
 import store from "../store/store"
 
 function MyApp({ Component, pageProps }) {
+    if (Component.name === "FourOhFour")
+        return <Component />;
     return (
         <Provider store={store}>
             <Layout {...pageProps} >

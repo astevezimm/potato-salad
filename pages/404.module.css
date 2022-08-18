@@ -1,0 +1,28 @@
+.four-oh-four {
+    margin: 100px auto auto;
+    text-align: center;
+}
+
+.four-oh-four h1 {
+    font-size: 10rem;
+    line-height: 100px;
+}
+
+.four-oh-four img {
+    border: solid 10px #FFB72B;
+    border-radius: 100px;
+}
+
+@media only screen and (max-width: 515px) {
+    .four-oh-four img {
+        width: 95%;
+    }
+    
+    .four-oh-four h1 {
+        font-size: 8rem;
+    }
+    
+    .four-oh-four h2 {
+        font-size: 2rem;
+    }
+}

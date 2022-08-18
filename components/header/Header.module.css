@@ -3,7 +3,6 @@
     margin: 0;
     text-align: center;
     background-image: linear-gradient(rgba(255,183,43,1) 0%, rgba(255,230,27,1) 70%, rgba(255,230,27,0) 100%);
-    color: #B5FE83;
     animation: title-appear 0.5s ease-out;
 }
 
