@@ -2,6 +2,7 @@ import MetaData from "./MetaData"
 import Header from "./header/Header";
 import TopSection from "./top-section/TopSection"
 import Footer from "./footer/Footer";
+import Tabs from "./Tabs";
 
 export default function Layout(props) {
     const projectDescription = "I'm Pretending to Make a Potato Salad with Fake Money$$$";
@@ -17,6 +18,7 @@ export default function Layout(props) {
             <main>
                 <div className="container">
                     <TopSection image={headerImg} />
+                    <Tabs />
                     {props.children}
                 </div>
             </main>
