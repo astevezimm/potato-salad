@@ -5,20 +5,15 @@ import Graph from "./Graph";
 export default function ImgGraph(props) {
     const [graphActive, setGraphActive] = useState(false);
     
-    const handleClick = () => setGraphActive(prev => !prev);
+    const handleClick = () => setGraphActive(!graphActive);
     
-    
-    /* these need to be tested on REAL touchscreen device, completely broken in Chrome dev tools */
     function openGraph() {
-        //if(window.matchMedia("(hover: hover)"))
-            setGraphActive(true);
+        setGraphActive(true);
     }
-    
+
     function closeGraph() {
-        //if(window.matchMedia("(hover: hover)"))
-            setGraphActive(false);
+        setGraphActive(false);
     }
-    
     
     const buttonLabel = graphActive ? "Hide Graph" : "Show Graph";
     const imgClass = graphActive ? classes["graph-active"] : "";
