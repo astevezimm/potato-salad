@@ -10,7 +10,7 @@
 
 .tabs li {
     list-style: none;
-    padding: 10px 20px;
+    padding: 6px 0;
     border: solid #bbb;
     border-bottom: solid #aaa;
     border-radius: 10px 10px 0 0;
@@ -19,6 +19,7 @@
 .tabs a {
     color: black;
     text-decoration: none;
+    padding: 10px 20px;
 }
 
 li.active {
@@ -38,4 +39,38 @@ li.blank {
     top: 0;
     width: 100%;
     background-image: linear-gradient(to right, #d0d0d0, #F7F7F7);
+}
+
+.sticky-placeholder {
+    height: 55px;
+}
+
+.to-top {
+    display: none;
+}
+
+.sticky + .to-top {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 10;
+    background: #B5FE83;
+    font-size: 2rem;
+    overflow: hidden;
+    height: 35px;
+    width: 35px;
+    border-radius: 10px;
+    border: solid 3px #FFB72B;
+}
+
+.sticky + .to-top a {
+    text-decoration: none;
+    padding: 10px;
+    transform: translateY(-13px);
+}
+
+.sticky + .to-top:hover {
+    box-shadow: 1px 2px 4px #ccc;
 }

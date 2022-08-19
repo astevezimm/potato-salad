@@ -22,7 +22,7 @@ export default function Tabs(props) {
     }, []);
     
     return (
-        <div ref={ref}>
+        <div ref={ref} className={classes["sticky-placeholder"]}>
             <nav className={classes.tabs + sticky}>
                 <ul>
                     {tab("/", "Campaign")}
@@ -30,9 +30,10 @@ export default function Tabs(props) {
                     {tab("/stretch-goals", "Stretch Goals")}
                     {tab("/updates", "Updates")}
                     {tab("/discussion", "Discussion")}
-                    <li className={classes.blank}>&nbsp;</li>
+                    <li className={classes.blank}></li>
                 </ul>
             </nav>
+            <div className={classes["to-top"]}><Link href="#">^</Link></div>
         </div>
     )
 }
