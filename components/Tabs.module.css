@@ -16,6 +16,10 @@
     border-radius: 10px 10px 0 0;
 }
 
+.tabs li:not(.blank) {
+    background-image: linear-gradient(#FFB72B, #FFE61B);
+}
+
 .tabs a {
     color: black;
     text-decoration: none;
@@ -26,12 +30,18 @@ li.active {
     border: solid #aaa;
     border-bottom: none;
     font-size: 125%;
+    background-image: linear-gradient(rgba(181, 254, 131, 1) 0%,
+                                        rgba(255, 230, 27, .8) 60%,
+                                        rgba(255, 230, 27, .8) 65%,
+                                        rgba(255, 230, 27, 0) 100%
+                                      ) !important;
 }
 
 li.blank {
     flex: 1;
     border: none;
     border-bottom: solid #aaa;
+    
 }
 
 .sticky {
@@ -42,7 +52,7 @@ li.blank {
 }
 
 .sticky-placeholder {
-    height: 55px;
+    height: 75px;
 }
 
 .to-top {
