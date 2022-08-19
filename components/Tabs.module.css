@@ -32,3 +32,10 @@ li.blank {
     border: none;
     border-bottom: solid #aaa;
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-image: linear-gradient(to right, #d0d0d0, #F7F7F7);
+}
