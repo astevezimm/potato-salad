@@ -13,6 +13,7 @@ export default function Layout(props) {
             <MetaData
                 image={props.image || headerImg}
                 description={props.description || projectDescription}
+                title={props.pageTitle}
             />
             <Header title={projectDescription} />
             <main>

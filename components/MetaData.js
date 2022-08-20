@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 export default function MetaData(props) {
-    const title = props.title || "Andrew Zimmerman | Making Potato Salad";
+    const title = `Andrew Zimmerman | Making Potato Salad${props.title ? " | " + props.title : ""}`;
     
     return (
         <Head>
