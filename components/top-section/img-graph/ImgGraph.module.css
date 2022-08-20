@@ -6,7 +6,7 @@
 
 .img-graph img {
     width: 100%;
-    max-width: 100vh;
+    max-width: 125vh;
     border-radius: 30px;
     transition: transform .5s ease, filter .3s .2s;
 }
