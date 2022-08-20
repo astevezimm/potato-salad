@@ -10,7 +10,7 @@ export default function Tabs(props) {
     const checkActive = path => path === router.pathname ? classes.active : "";
     const tab = (path, label) => (
         <li className={checkActive(path)}>
-            <Link href={path}>{label}</Link>
+            <Link href={`${path}${sticky && "#tabs"}`}>{label}</Link>
         </li>
     )
 
@@ -22,7 +22,7 @@ export default function Tabs(props) {
     }, []);
     
     return (
-        <div ref={ref} className={classes["sticky-placeholder"]}>
+        <div ref={ref} className={classes["sticky-placeholder"]} id="tabs">
             <nav className={classes.tabs + sticky}>
                 <ul>
                     {tab("/", "Campaign")}
