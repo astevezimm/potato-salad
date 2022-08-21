@@ -1,3 +1,5 @@
+import fetchStats from "../database/data";
+
 export default function StretchGoals() {
     return <h1>Stretch Goals</h1>
 }

@@ -1,3 +1,5 @@
+import fetchStats from "../database/data";
+
 export default function Updates() {
     return <h1>Updates</h1>
 }
