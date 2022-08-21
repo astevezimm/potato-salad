@@ -2,11 +2,12 @@ export default function StretchGoals() {
     return <h1>Stretch Goals</h1>
 }
 
-export function getStaticProps() {
+export async function getStaticProps() {
     return {
         props: {
-            pageTitle: "Stretch Goals"
+            pageTitle: "Stretch Goals",
+            stats: await fetchStats()
         },
-        //revalidate: 5
+        revalidate: 5
     };
 }

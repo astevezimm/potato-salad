@@ -1,12 +1,15 @@
+import fetchStats from "../database/data";
+
 export default function Discussion() {
     return <h1>Discussion</h1>
 }
 
-export function getStaticProps() {
+export async function getStaticProps() {
     return {
         props: {
-            pageTitle: "Discussion"
+            pageTitle: "Discussion",
+            stats: await fetchStats()
         },
-        //revalidate: 5
+        revalidate: 5
     };
 }

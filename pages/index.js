@@ -1,3 +1,5 @@
+import fetchStats from "../database/data";
+
 export default function HomePage() {
     return (
         <>
@@ -49,4 +51,13 @@ export default function HomePage() {
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
         </>
     )
+}
+
+export async function getStaticProps() {
+    return {
+        props: {
+            stats: await fetchStats()
+        },
+        revalidate: 5
+    };
 }

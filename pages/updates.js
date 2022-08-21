@@ -2,11 +2,12 @@ export default function Updates() {
     return <h1>Updates</h1>
 }
 
-export function getStaticProps() {
+export async function getStaticProps() {
     return {
         props: {
-            pageTitle: "Updates"
+            pageTitle: "Updates",
+            stats: await fetchStats()
         },
-        //revalidate: 5
+        revalidate: 5
     };
 }
