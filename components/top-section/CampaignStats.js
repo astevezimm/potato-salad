@@ -1,5 +1,6 @@
 import classes from "./CampaignStats.module.css"
 import {useSelector} from "react-redux";
+import useStatAutoRefresh from "../../hooks/useStatAutoRefresh";
 
 export default function CampaignStats() {
     const {
@@ -8,6 +9,8 @@ export default function CampaignStats() {
         totalAmount: amount,
         backers
     } = useSelector(state => state.campaignStats);
+    
+    useStatAutoRefresh();
     
     function format(value) {
         return value.toLocaleString("en-US");

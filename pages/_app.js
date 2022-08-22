@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
     if (Component.name === "FourOhFour")
         return <Component />;
     
-    useDispatch(campaignStatsActions.update(pageProps.stats));
+    useDispatch()(campaignStatsActions.update(pageProps.stats));
     
     return (
         <Provider store={store}>
