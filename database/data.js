@@ -6,7 +6,7 @@ mongoose.connect(process.env.DB_URL);
 
 const Stats = mongoose.model("Stats", {
     timeEnds: Date,
-        goal: Number,
+    goal: Number,
     totalAmount: Number,
     dailyAmounts: [Number],
     backers: Number,
@@ -14,5 +14,5 @@ const Stats = mongoose.model("Stats", {
 });
 
 export default async function fetchStats() {
-    return Stats.find();
+    return Stats.find()[0];
 }
