@@ -12,12 +12,12 @@ const campaignStatsSlice = createSlice({
     },
     reducers: {
         update: (state, action) => {
-            state.timeEnds = action.timeEnds;
-            state.goal = action.goal;
-            state.totalAmount = action.totalAmount;
-            state.dailyAmounts = action.dailyAmounts;
-            state.backers = action.backers;
-            state.dailyBackers = action.dailyBackers;
+            state.timeEnds = new Date(action.payload.timeEnds);
+            state.goal = action.payload.goal;
+            state.totalAmount = action.payload.totalAmount;
+            state.dailyAmounts = action.payload.dailyAmounts;
+            state.backers = action.payload.backers;
+            state.dailyBackers = action.payload.dailyBackers;
         }
     }
 });

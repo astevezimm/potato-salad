@@ -1,18 +1,20 @@
 ﻿import dotenv from "dotenv";
 dotenv.config();
-import mongoose from "mongoose";
-
-mongoose.connect(process.env.DB_URL);
-
-const Stats = mongoose.model("Stats", {
-    timeEnds: Date,
-    goal: Number,
-    totalAmount: Number,
-    dailyAmounts: [Number],
-    backers: Number,
-    dailyBackers: [Number]
-});
+import mongoose, {Schema} from "mongoose";
 
 export default async function fetchStats() {
-    return Stats.find()[0];
+    await mongoose.connect(process.env.DB_URL);
+
+    const Stat = mongoose.model("Stat", new Schema ({
+        timeEnds: Date,
+        goal: Number,
+        totalAmount: Number,
+        dailyAmounts: [Number],
+        backers: Number,
+        dailyBackers: [Number]
+    }));
+    
+    const stats = await Stat.findOne({});
+    await mongoose.connection.close();
+    return JSON.stringify(stats);
 }

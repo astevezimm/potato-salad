@@ -3,10 +3,16 @@ import Header from "./header/Header";
 import TopSection from "./top-section/TopSection"
 import Footer from "./footer/Footer";
 import Tabs from "./Tabs";
+import {useDispatch} from "react-redux";
+import {campaignStatsActions} from "../store/campaignStats";
 
 export default function Layout(props) {
     const projectDescription = "I'm Pretending to Make a Potato Salad with Fake Money$$$";
     const headerImg = "/images/header.png";
+
+    const dispatch = useDispatch();
+    console.log(props.stats);
+    dispatch(campaignStatsActions.update(JSON.parse(props.stats)));
     
     return (
         <>

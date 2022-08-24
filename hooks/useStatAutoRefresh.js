@@ -4,6 +4,7 @@ import {campaignStatsActions} from "../store/campaignStats";
 
 export default function useStatAutoRefresh() {
     const [_, reset] = useState();
+    const dispatch = useDispatch();
     
     useEffect(() => {
         const timeout = setTimeout(fetchStats, 5000);
@@ -11,9 +12,9 @@ export default function useStatAutoRefresh() {
     });
 
     async function fetchStats() {
-        await fetch("/api/stats.js")
+        await fetch("/api/stats")
             .then((response) => response.json())
-            .then((data) => useDispatch()(campaignStatsActions.update(data)));
+            .then((data) => dispatch(campaignStatsActions.update(data)));
         reset(null);
     }
 }
