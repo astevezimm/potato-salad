@@ -1,11 +1,8 @@
-﻿import dotenv from "dotenv";
-dotenv.config();
-import mongoose, {Schema} from "mongoose";
+﻿import mongoose from "mongoose";
+import connect from "./mongoConnection";
 
-export default async function fetchStats() {
-    await mongoose.connect(process.env.DB_URL);
-
-    const Stat = mongoose.model("Stat", new Schema ({
+if (!global.Stat)
+    global.Stat = mongoose.model("Stat", new mongoose.Schema ({
         timeEnds: Date,
         goal: Number,
         totalAmount: Number,
@@ -13,8 +10,9 @@ export default async function fetchStats() {
         backers: Number,
         dailyBackers: [Number]
     }));
-    
+
+export default async function fetchStats() {
+    await connect();
     const stats = await Stat.findOne({});
-    await mongoose.connection.close();
     return JSON.stringify(stats);
 }

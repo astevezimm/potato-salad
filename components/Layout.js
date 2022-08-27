@@ -11,7 +11,6 @@ export default function Layout(props) {
     const headerImg = "/images/header.png";
 
     const dispatch = useDispatch();
-    console.log(props.stats);
     dispatch(campaignStatsActions.update(JSON.parse(props.stats)));
     
     return (
