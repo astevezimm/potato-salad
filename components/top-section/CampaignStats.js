@@ -7,7 +7,8 @@ export default function CampaignStats() {
         timeEnds,
         goal,
         totalAmount: amount,
-        backers
+        backers,
+        timeLeft
     } = useSelector(state => state.campaignStats);
     
     useStatAutoRefresh();
@@ -20,12 +21,13 @@ export default function CampaignStats() {
         return format((amount / goal) * 100);
     }
     
-    function daysLeft() {
-        return Math.floor((timeEnds - new Date()) / 86400000);
+    function formattedEnd() {
+        return timeEnds.toLocaleDateString("en-us", {year: "numeric", month: "short", day: "numeric"});
     }
     
-    function formatedEnd() {
-        return timeEnds.toLocaleDateString("en-us", {year: "numeric", month: "short", day: "numeric"});
+    function formattedTimeLeft() {
+        const ms_in_day = 86400000;
+        return timeLeft;
     }
     
     return (
@@ -40,9 +42,9 @@ export default function CampaignStats() {
                     </h2>
                 </div>
                 <div className={classes.stat}>
-                    <h2><span className={classes.day}>{daysLeft()}</span>
+                    <h2><span className={classes.day}>{formattedTimeLeft()}</span>
                         <span className={classes["days-left-label"]}>days left</span>
-                        <span className={classes["end-date"]}>ends {formatedEnd()}</span>
+                        <span className={classes["end-date"]}>ends {formattedEnd()}</span>
                     </h2>
                 </div>
             </div>

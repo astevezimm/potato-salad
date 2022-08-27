@@ -8,7 +8,8 @@ const campaignStatsSlice = createSlice({
         totalAmount: 2500000,
         dailyAmounts: [],
         backers: 2,
-        dailyBackers: []
+        dailyBackers: [],
+        timeLeft: 1
     },
     reducers: {
         update: (state, action) => {
@@ -18,6 +19,7 @@ const campaignStatsSlice = createSlice({
             state.dailyAmounts = action.payload.dailyAmounts;
             state.backers = action.payload.backers;
             state.dailyBackers = action.payload.dailyBackers;
+            state.timeLeft = action.payload.timeLeft;
         }
     }
 });
