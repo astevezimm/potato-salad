@@ -25,9 +25,15 @@ export default function CampaignStats() {
         return timeEnds.toLocaleDateString("en-us", {year: "numeric", month: "short", day: "numeric"});
     }
     
-    function formattedTimeLeft() {
-        const ms_in_day = 86400000;
-        return timeLeft;
+    let formatted_timeLeft = Math.floor(timeLeft / 86400000);
+    let unit_timeLeft = "days";
+    if (formatted_timeLeft < 2) {
+        formatted_timeLeft = Math.floor(timeLeft / 3600000);
+        unit_timeLeft = "hours";
+        if (formatted_timeLeft < 1) {
+            formatted_timeLeft = Math.floor(timeLeft / 60000);
+            unit_timeLeft = "minutes";
+        }
     }
     
     return (
@@ -42,8 +48,8 @@ export default function CampaignStats() {
                     </h2>
                 </div>
                 <div className={classes.stat}>
-                    <h2><span className={classes.day}>{formattedTimeLeft()}</span>
-                        <span className={classes["days-left-label"]}>days left</span>
+                    <h2><span className={classes.day}>{formatted_timeLeft}</span>
+                        <span className={classes["days-left-label"]}>{unit_timeLeft} left</span>
                         <span className={classes["end-date"]}>ends {formattedEnd()}</span>
                     </h2>
                 </div>
