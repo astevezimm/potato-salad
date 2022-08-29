@@ -27,6 +27,6 @@ function calcEndDate() {
 export default async function fetchStats() {
     const [timeEnds, timeLeft] = calcEndDate();
     await connect();
-    const stats = await Stat.findOne({timeLeft: timeLeft});
+    const stats = await Stat.findOne({timeLeft: +timeLeft}); //todo: this needs to be a 5 second range to work right
     return JSON.stringify({...stats, goal, timeEnds});
 }
