@@ -1,6 +1,7 @@
 import classes from "./CampaignStats.module.css"
 import {useSelector} from "react-redux";
 import useStatAutoRefresh from "../../hooks/useStatAutoRefresh";
+import {millisecondsToMinutes, minutesToHours} from "date-fns";
 
 export default function CampaignStats() {
     const {
@@ -25,14 +26,14 @@ export default function CampaignStats() {
         return timeEnds.toLocaleDateString("en-us", {year: "numeric", month: "short", day: "numeric"});
     }
     
-    let formatted_timeLeft = Math.floor(timeLeft / 86400000);
-    let unit_timeLeft = "days";
-    if (formatted_timeLeft < 2) {
-        formatted_timeLeft = Math.floor(timeLeft / 3600000);
+    let formatted_timeLeft = millisecondsToMinutes(timeLeft);
+    let unit_timeLeft = "minutes";
+    if (formatted_timeLeft >= 60) {
+        formatted_timeLeft = minutesToHours(formatted_timeLeft);
         unit_timeLeft = "hours";
-        if (formatted_timeLeft < 1) {
-            formatted_timeLeft = Math.floor(timeLeft / 60000);
-            unit_timeLeft = "minutes";
+        if (formatted_timeLeft >= 24) {
+            formatted_timeLeft = Math.floor(formatted_timeLeft / 24);
+            unit_timeLeft = "days";
         }
     }
     

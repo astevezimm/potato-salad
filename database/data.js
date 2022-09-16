@@ -1,5 +1,6 @@
 ﻿import mongoose from "mongoose";
 import connect from "./mongoConnection";
+import {addDays} from "date-fns";
 
 if (!global.Stat)
     global.Stat = mongoose.model("Stat", new mongoose.Schema ({
@@ -15,11 +16,10 @@ const startDate = new Date(2022, 8, 12);
 const campaignLength = 30;
 
 function calcEndDate() {
-    const ms_in_day = 86400000;
     const current = new Date();
     let date = startDate;
     while (date < current)
-        date = new Date(+startDate + (campaignLength * ms_in_day));
+        date = addDays(startDate, campaignLength);
     const timeLeft = date - new Date();
     return [date, timeLeft];
 }
