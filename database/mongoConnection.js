@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+//const mongoose = require("mongoose");
 
 let cached = global.mongoose;
 if (!cached) {
@@ -8,7 +9,7 @@ if (!cached) {
     };
 }
 
-export default async function connect() {
+async function connect() {
     if (cached.connection)
         return cached.connection;
 
@@ -20,3 +21,6 @@ export default async function connect() {
     cached.connection = await cached.promise;
     return cached.connection;
 }
+
+export default connect;
+//exports.connect = connect;

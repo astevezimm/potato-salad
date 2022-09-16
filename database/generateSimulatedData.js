@@ -1,7 +1,8 @@
-import mongoose from "mongoose";
-import connect from "./mongoConnection";
+const mongoose = require("mongoose");
+const connect = require("./mongoConnection");
+const milliseconds = require("date-fns/milliseconds");
 
-const Stat = mongoose.model("Stat", new mongoose.Schema ({
+/*const Stat = mongoose.model("Stat", new mongoose.Schema ({
     totalAmount: Number,
     dailyAmounts: [Number],
     backers: Number,
@@ -9,23 +10,29 @@ const Stat = mongoose.model("Stat", new mongoose.Schema ({
     timeLeft: Number
 }));
 
-connect();
+connect();*/
 
 const currentStat = {
     totalAmount: 0,
     dailyAmounts: [],
     backers: 0,
     dailyBackers: [],
-    timeLeft: 2592000000
+    timeLeft: milliseconds({days: 30})
 }
 const stats = [{...currentStat}];
 
-const iters = 518400000;
-const itersPerDay = 17280;
-let prevDayTotal = 0;
+const iters = currentStat.timeLeft / milliseconds({seconds: 5});
+const itersPerDay = iters / 30;
 
-for (let i = 1; i <= iters; i++) {
-    currentStat.totalAmount = Math.log(i / (1 - i)); //todo: keep working on this until it's actually correct
+let prevDayTotal = 0;
+let nextBacking = 0;
+for (let i = 1, j = 0; i <= iters; i++) {
+    if (j >= nextBacking) {
+        currentStat.totalAmount += 35;
+        j = 0;
+        nextBacking = Math.floor(Math.random() * 20);
+    } else
+        j++;
     currentStat.backers = Math.floor(currentStat.totalAmount / 35);
     if (i % itersPerDay === 0) {
         const newDailyAmount = currentStat.totalAmount - prevDayTotal;
@@ -33,10 +40,12 @@ for (let i = 1; i <= iters; i++) {
         currentStat.dailyBackers = [...currentStat.dailyBackers, newDailyAmount / 35];
         prevDayTotal = currentStat.totalAmount;
     }
-    currentStat.timeLeft -= 5;
+    currentStat.timeLeft -= milliseconds({seconds: 5});
     stats.push({...currentStat});
 }
 
+console.log(stats[iters-1]);
+
 //todo: Stat.insertMany
 
-mongoose.disconnect();
+//mongoose.disconnect();
