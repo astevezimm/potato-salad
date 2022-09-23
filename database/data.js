@@ -24,9 +24,19 @@ function calcEndDate() {
     return [date, timeLeft];
 }
 
+function roundTo5Secs(time) {
+    return (Math.ceil(+time / 5000)) * 5000;
+}
+
 export default async function fetchStats() {
     const [timeEnds, timeLeft] = calcEndDate();
     await connect();
-    const stats = await Stat.findOne({timeLeft: +timeLeft}); //todo: this needs to be a 5 second range to work right
-    return JSON.stringify({...stats, goal, timeEnds});
+    const stats = await Stat.findOne({timeLeft: roundTo5Secs(timeLeft)});
+    return JSON.stringify({
+        totalAmount: stats.totalAmount,
+        dailyAmounts: stats.dailyAmounts,
+        backers: stats.backers,
+        dailyBackers: stats.dailyBackers,
+        timeLeft, goal, timeEnds
+    });
 }

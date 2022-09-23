@@ -4,13 +4,15 @@ import useStatAutoRefresh from "../../hooks/useStatAutoRefresh";
 import {millisecondsToMinutes, minutesToHours} from "date-fns";
 
 export default function CampaignStats() {
+    const stats = useSelector(state => state.campaignStats);
     const {
         timeEnds,
         goal,
         totalAmount: amount,
         backers,
         timeLeft
-    } = useSelector(state => state.campaignStats);
+    } = stats;
+    //console.log(stats);
     
     useStatAutoRefresh();
     
