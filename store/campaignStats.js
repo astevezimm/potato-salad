@@ -9,10 +9,12 @@ const campaignStatsSlice = createSlice({
         dailyAmounts: [],
         backers: 2,
         dailyBackers: [],
-        timeLeft: 1
+        timeLeft: +(new Date(3000, 11))
     },
     reducers: {
         update: (state, action) => {
+            if (action.payload.timeLeft > state.timeLeft)
+                return;
             state.timeEnds = new Date(action.payload.timeEnds);
             state.goal = action.payload.goal;
             state.totalAmount = action.payload.totalAmount;
