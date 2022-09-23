@@ -10,6 +10,6 @@ export async function getStaticProps() {
             pageTitle: "Stretch Goals",
             stats: await fetchStats()
         },
-        revalidate: 5
+        revalidate: 1
     };
 }

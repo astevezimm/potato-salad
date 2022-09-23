@@ -58,6 +58,6 @@ export async function getStaticProps() {
         props: {
             stats: await fetchStats()
         },
-        revalidate: 5
+        revalidate: 1
     };
 }

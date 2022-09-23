@@ -10,6 +10,6 @@ export async function getStaticProps() {
             pageTitle: "Updates",
             stats: await fetchStats()
         },
-        revalidate: 5
+        revalidate: 1
     };
 }
