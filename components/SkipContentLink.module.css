@@ -1,0 +1,14 @@
+.skip-content {
+    position: fixed;
+    translate: 0 -75px;
+    z-index: 1;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.5rem;
+    background-color: #d0d0d0;
+    color: #6e6e6e;
+}
+
+.skip-content:focus {
+    translate: 0;
+}

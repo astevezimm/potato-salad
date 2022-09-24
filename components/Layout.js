@@ -5,6 +5,7 @@ import Footer from "./footer/Footer";
 import Tabs from "./Tabs";
 import {useDispatch} from "react-redux";
 import {campaignStatsActions} from "../store/campaignStats";
+import SkipContentLinks from "./SkipContentLinks";
 
 export default function Layout(props) {
     const projectDescription = "I'm Pretending to Make a Potato Salad with Fake Money$$$";
@@ -20,6 +21,7 @@ export default function Layout(props) {
                 description={props.description || projectDescription}
                 title={props.pageTitle}
             />
+            <SkipContentLinks />
             <Header title={projectDescription} />
             <main>
                 <div className="container">
