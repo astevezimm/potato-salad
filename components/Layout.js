@@ -26,7 +26,7 @@ export default function Layout(props) {
             <main>
                 <div className="container">
                     <TopSection image={headerImg} />
-                    <Tabs />
+                    <Tabs sectBtn={props.sectBtn} />
                     {props.children}
                 </div>
             </main>

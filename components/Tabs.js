@@ -34,6 +34,7 @@ export default function Tabs(props) {
                 </ul>
             </nav>
             <div className={classes["to-top"]}><Link href="#">^</Link></div>
+            {props.sectBtn && <button>Section</button>}
         </div>
     )
 }

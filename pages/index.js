@@ -56,7 +56,8 @@ export default function HomePage() {
 export async function getStaticProps() {
     return {
         props: {
-            stats: await fetchStats()
+            stats: await fetchStats(),
+            sectBtn: true    
         },
         revalidate: 1
     };
