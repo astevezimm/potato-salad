@@ -22,19 +22,21 @@ export default function Tabs(props) {
     }, []);
     
     return (
-        <div ref={ref} className={classes["sticky-placeholder"]} id="tabs">
-            <nav className={classes.tabs + sticky}>
-                <ul>
-                    {tab("/", "Campaign")}
-                    {tab("/faq", "FAQ")}
-                    {tab("/stretch-goals", "Stretch Goals")}
-                    {tab("/updates", "Updates")}
-                    {tab("/discussion", "Discussion")}
-                    <li className={classes.blank}></li>
-                </ul>
-            </nav>
-            <div className={classes["to-top"]}><Link href="#">^</Link></div>
+        <>
+            <div ref={ref} className={classes["sticky-placeholder"]} id="tabs">
+                <nav className={classes.tabs + sticky}>
+                    <ul>
+                        {tab("/", "Campaign")}
+                        {tab("/faq", "FAQ")}
+                        {tab("/stretch-goals", "Stretch Goals")}
+                        {tab("/updates", "Updates")}
+                        {tab("/discussion", "Discussion")}
+                        <li className={classes.blank}></li>
+                    </ul>
+                </nav>
+                <div className={classes["to-top"]}><Link href="#">^</Link></div>
+            </div>
             {props.sectBtn && <button>Section</button>}
-        </div>
+        </>
     )
 }
