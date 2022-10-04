@@ -36,7 +36,7 @@ export default function Tabs(props) {
                 </nav>
                 <div className={classes["to-top"]}><Link href="#">^</Link></div>
             </div>
-            {props.sectBtn && <button>Section</button>}
+            {props.sectBtn && <button className={classes.btn + sticky}>Sections</button>}
         </>
     )
 }

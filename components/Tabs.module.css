@@ -46,13 +46,35 @@ li.blank {
 
 .sticky {
     position: fixed;
+}
+
+.tabs.sticky {
     top: 0;
     width: 100%;
     background-image: linear-gradient(to right, #d0d0d0, #F7F7F7);
 }
 
+.btn {
+    background: #FFE61B;
+    border-radius: 10px;
+    border: solid 3px #97d56c;
+}
+
+.btn.sticky {
+    top: 70px;
+}
+
+.btn:hover {
+    background: #f6db13;
+    box-shadow: 1px 2px 4px #999;
+}
+
 .sticky-placeholder {
     height: 75px;
+}
+
+.sticky-placeholder:has(.sticky) {
+    height: 100px;
 }
 
 .to-top {
