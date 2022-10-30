@@ -19,7 +19,7 @@ function calcEndDate() {
     const current = new Date();
     let date = startDate;
     while (date < current)
-        date = addDays(startDate, campaignLength);
+        date = addDays(date, campaignLength);
     const timeLeft = date - new Date();
     return [date, timeLeft];
 }
