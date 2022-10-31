@@ -126,5 +126,7 @@ li.blank {
 }
 
 @media only screen and (max-width: 421px) {
-    
+    .tabs {
+        overflow-x: scroll;
+    }
 }

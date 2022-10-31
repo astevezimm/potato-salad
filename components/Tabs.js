@@ -28,7 +28,7 @@ export default function Tabs(props) {
                     <ul>
                         {tab("/", "Campaign")}
                         {tab("/faq", "FAQ")}
-                        {tab("/stretch-goals", "Stretch Goals")}
+                        {tab("/stretch-goals", "StretchGoals")}
                         {tab("/updates", "Updates")}
                         {tab("/discussion", "Discussion")}
                         <li className={classes.blank}></li>
