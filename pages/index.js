@@ -2,54 +2,10 @@ import fetchStats from "../database/data";
 
 export default function HomePage() {
     return (
-        <>
-            <h1>Home Page</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus explicabo molestiae quidem? Autem consectetur cum doloremque facere iure magnam provident quae tempore. Cupiditate dolore dolorum, repellat tenetur vitae voluptates.</p>
-        </>
+        <div className="placeholder-content">
+            <h2>Description</h2>
+            <p>To be implemented</p>
+        </div>
     )
 }
 
@@ -57,7 +13,7 @@ export async function getStaticProps() {
     return {
         props: {
             stats: await fetchStats(),
-            sectBtn: true    
+            //sectBtn: true    
         },
         revalidate: 1
     };

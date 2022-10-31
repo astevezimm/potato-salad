@@ -1,7 +1,12 @@
 import fetchStats from "../database/data";
 
 export default function FAQ() {
-    return <h1>FAQ</h1>;
+    return (
+        <div className="placeholder-content">
+            <h2>FAQ</h2>
+            <p>To be implemented</p>
+        </div>
+    );
 }
 
 export async function getStaticProps() {

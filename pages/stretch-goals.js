@@ -1,7 +1,12 @@
 import fetchStats from "../database/data";
 
 export default function StretchGoals() {
-    return <h1>Stretch Goals</h1>
+    return (
+        <div className="placeholder-content">
+            <h2>Stretch Goals</h2>
+            <p>To be implemented</p>
+        </div>
+    );
 }
 
 export async function getStaticProps() {
